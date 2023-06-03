@@ -32,7 +32,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:textColor="@color/primary"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:text="Sign Up" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -134,7 +134,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:textSize="13dp"
+            android:textSize="13sp"
             android:text="Already an user? Login" />
     </LinearLayout>
 </RelativeLayout>
