@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting.HelpActivity">
+
+    <include
+        android:id="@+id/tb_custom"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:text="Help"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:textColor="?android:attr/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb_custom" />
+
+    <LinearLayout
+        android:id="@+id/ll_help1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_title_help1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Bagaimana jika lupa password?"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow_help1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/angle_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/colorPrimary" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_desc_help1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:text="Apabila pengguna lupa password, bisa mengirim ulang ke email agar mengganti password yang lama dengan yang baru."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_help2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_help1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_title_help2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Apa bisa akun tersambung di 2 device?"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow_help2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/angle_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/colorPrimary" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_desc_help2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:text="Akun StudentCACO bisa tersambung ke beberapa device, baik itu dibuka melalui PC, laptop, maupun handphone."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_help3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_help2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_title_help3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Bagaimana jika tidak bisa login?"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/iv_arrow_help3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/angle_right"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/colorPrimary" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_desc_help3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:text="Apabila pengguna tidak bisa login karena lupa password, bisa mengirim ulang ke email agar dapat mengganti ke password yang baru. Jika tidak bisa login karena pengguna/user tidak ditemukan,  bisa mengklik bagian daftar atau sign up terlebih dahulu."/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,5 +9,5 @@
         app:title="Back"
         app:titleMarginStart="0dp"
         app:titleTextAppearance="@style/CustomToolBarStyle"
-        app:titleTextColor="@color/text_black" />
+        app:titleTextColor="?android:attr/textColor" />
 </layout>
