@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivitiesActivity">
+
+    <include
+        android:id="@+id/custom_toolbar"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_below="@id/custom_toolbar"
+        android:id="@+id/rl_activity_detail_act_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBEEF2"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_activity_detail_act_img"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iisma"/>
+
+        <LinearLayout
+            android:id="@+id/ll_item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/iv_activity_detail_act_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_activity_detail_act_titleText"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="International Student Mobility Awards edisi Vokasi (IISMAVO) 2023"/>
+
+            <TextView
+                android:id="@+id/tv_activity_detail_act_deadlineText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="deadline 09 Maret 2023"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_activity_detail_act_descText"
+        android:padding="15dp"
+        android:layout_below="@id/rl_activity_detail_act_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pertukaran akademik yang terbuka dan dinamis memainkan peran penting dalam mempersiapkan siswa Indonesia dengan pola pikir, pengetahuan, dan keterampilan yang siap menghadapi masa depan yang mereka butuhkan untuk berhasil. Mobilitas internasional yang dipromosikan oleh IISMA, salah satu program unggulan Kampus Emansipasi, akan mengembangkan apresiasi dan pemahaman lintas budaya mahasiswa, mempersiapkan generasi baru warga global yang siap berkontribusi pada masyarakat dan dunia. Masa depan yang lebih baik dimulai hari ini dengan program Emansipasi Kampus."/>
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_button_primary"
+        android:text="Add"/>
+</RelativeLayout>

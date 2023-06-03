@@ -15,10 +15,10 @@ public class SecurityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_security);
         binding = ActivitySecurityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         bindSecurity();
+        binding.tbCustom.appToolbar.setOnClickListener(view -> finish());
 
     }
 
