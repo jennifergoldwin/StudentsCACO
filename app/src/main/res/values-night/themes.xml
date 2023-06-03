@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.StudentsCACO" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="android:textColor">@color/grey_light</item>
+    <style name="Base.Theme.StudentsCACO" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="android:textColor">@color/grey_blue</item>
     </style>
 </resources>

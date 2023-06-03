@@ -1,7 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.StudentsCACO" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
+    <style name="Base.Theme.StudentsCACO" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_light</item>
+        <item name="android:textColor">@color/text_black</item>
     </style>
 
     <style name="Theme.StudentsCACO" parent="Base.Theme.StudentsCACO" />

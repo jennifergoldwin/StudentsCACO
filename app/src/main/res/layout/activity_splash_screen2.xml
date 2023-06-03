@@ -20,7 +20,7 @@
         android:text="Welcome, productive student!"
         android:fontFamily="@font/source_sans_pro_bold"
         android:textSize="24sp"
-        android:textColor="@color/primary"
+        android:textColor="?android:attr/colorPrimary"
         android:layout_marginRight="24dp"
         android:layout_marginLeft="24dp"
         android:layout_centerVertical="true"

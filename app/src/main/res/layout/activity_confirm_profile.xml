@@ -25,7 +25,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_below="@id/iv_profile"
-        android:background="@color/grey_light" />
+        android:background="@color/grey_blue" />
 
     <ScrollView
         android:id="@+id/sv_profile"
@@ -53,7 +53,6 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/source_sans_pro_bold"
                     android:textSize="14sp"
-                    android:textColor="@color/text_black"
                     android:text="Full Name" />
 
                 <com.google.android.material.textfield.TextInputLayout
