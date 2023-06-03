@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.studentscaco.databinding.FragmentHomeBinding;
+import com.example.studentscaco.setting.SettingActivity;
 
 
 public class HomeFragment extends Fragment {
@@ -37,6 +38,9 @@ public class HomeFragment extends Fragment {
         });
         binding.ivBookmark.setOnClickListener(view -> {
             startActivity(new Intent(view.getContext(), BookmarkListActivity.class));
+        });
+        binding.ivSettings.setOnClickListener(view -> {
+            startActivity(new Intent(view.getContext(), SettingActivity.class));
         });
         binding.tvSeeAllTips.setOnClickListener(view -> {
             startActivity(new Intent(view.getContext(), DetailTipsActivity.class));

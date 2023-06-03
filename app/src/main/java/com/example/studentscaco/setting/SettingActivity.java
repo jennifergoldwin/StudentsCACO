@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.studentscaco.R;
+import com.example.studentscaco.databinding.ActivityApperanceBinding;
 import com.example.studentscaco.databinding.ActivitySettingBinding;
 import com.example.studentscaco.databinding.LogoutBottomsheetLayoutBinding;
 import com.example.studentscaco.onboarding.SplashScreen1;
@@ -22,10 +23,10 @@ public class SettingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setting);
         binding = ActivitySettingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         bindSetting();
+        binding.tbCustom.appToolbar.setOnClickListener(view -> finish());
     }
 
     private void bindSetting() {

@@ -17,6 +17,18 @@
             android:name=".BookmarkListActivity"
             android:exported="false" />
         <activity
+            android:name=".setting.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".setting.ApperanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".setting.HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".setting.SecurityActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailTipsActivity"
             android:exported="false" />
         <activity

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.studentscaco.R;
+import com.example.studentscaco.databinding.ActivityApperanceBinding;
 import com.example.studentscaco.databinding.ActivityHelpBinding;
 
 public class HelpActivity extends AppCompatActivity {
@@ -15,10 +16,10 @@ public class HelpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_help);
         binding = ActivityHelpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         bindHelp();
+        binding.tbCustom.appToolbar.setOnClickListener(view -> finish());
     }
 
     private void bindHelp() {
