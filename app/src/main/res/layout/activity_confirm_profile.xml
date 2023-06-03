@@ -52,7 +52,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/source_sans_pro_bold"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_black"
                     android:text="Full Name" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -92,7 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/source_sans_pro_bold"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     android:text="Email" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -132,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/source_sans_pro_bold"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     android:text="Username" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -172,7 +173,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/source_sans_pro_bold"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     android:text="NIM" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -212,7 +213,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/source_sans_pro_bold"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     android:text="Jurusan" />
 
                 <com.google.android.material.textfield.TextInputLayout
