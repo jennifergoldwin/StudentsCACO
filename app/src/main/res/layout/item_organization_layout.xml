@@ -10,10 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#EBEEF2"
-        android:orientation="horizontal"
-        android:padding="15dp">
+        android:padding="10dp">
         <ImageView
-            android:id="@+id/iv_item_img"
+            android:id="@+id/iv_item_org_img"
             android:layout_width="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
@@ -26,11 +25,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_toRightOf="@id/iv_item_img"
+            android:layout_toRightOf="@id/iv_item_org_img"
             android:layout_toLeftOf="@id/ib_bookmark"
             android:orientation="vertical">
 
             <TextView
+                android:fontFamily="@font/source_sans_pro_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="International Student Mobility Awards edisi Vokasi (IISMAVO) 2023"/>
@@ -51,6 +51,8 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/back_button_default"
             android:layout_alignParentEnd="true"
             android:layout_height="wrap_content"
             android:layout_below="@id/ll_item_detail"

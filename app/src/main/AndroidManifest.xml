@@ -13,13 +13,21 @@
         android:theme="@style/Theme.StudentsCACO"
         tools:targetApi="31">
         <activity
+            android:name=".DetailTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivitiesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailSearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
             android:name=".onboarding.ConfirmProfileActivity"
-            android:exported="false" >
+            android:exported="false">
+            >
         </activity>
         <activity
             android:name=".onboarding.SplashScreen2"
@@ -29,7 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".onboarding.SignUpActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,8 +49,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
