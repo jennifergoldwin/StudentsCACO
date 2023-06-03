@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="CustomToolBarStyle" parent="Widget.AppCompat.Toolbar">
-        <item name="android:actionMenuTextColor">@color/text_black</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColor</item>
         <item name="android:textSize">17sp</item>
         <item name="android:fontFamily">@font/source_sans_pro_bold</item>
+    </style>
+    <style name="CustomSwitchStyle" parent="Base.Theme.StudentsCACO">
+        <item name="colorControlActivated">?android:attr/colorPrimary</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">?android:attr/textColor</item>
     </style>
 </resources>
