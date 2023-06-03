@@ -39,6 +39,7 @@
                     android:layout_marginRight="5dp"
                     android:src="@drawable/settings"/>
                 <ImageView
+                    android:id="@+id/iv_bookmark"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_marginLeft="5dp"
@@ -77,6 +78,7 @@
                             android:layout_alignParentStart="true"
                             android:fontFamily="@font/source_sans_pro_semibold"/>
                         <TextView
+                            android:id="@+id/tv_see_all_scholarship"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="See all"
@@ -111,6 +113,7 @@
                             android:layout_alignParentStart="true"
                             android:fontFamily="@font/source_sans_pro_semibold"/>
                         <TextView
+                            android:id="@+id/tv_see_all_tips"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="See all"
@@ -146,6 +149,7 @@
                             android:layout_alignParentStart="true"
                             android:fontFamily="@font/source_sans_pro_semibold"/>
                         <TextView
+                            android:id="@+id/tv_see_all_recommendation"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="See all"

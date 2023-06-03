@@ -6,6 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".DetailTipsActivity">
 
-    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/custom_toolbar"
+                layout="@layout/custom_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_below="@id/custom_toolbar"
+                android:layout_width="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/item_tips_activity_detail_tips"
+                    layout="@layout/item_tips_trick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="24dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="#EBEEF2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_activity_detail_tips_descText"
+                            android:padding="24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Penelitian: Mulailah dengan meneliti beasiswa yang tersedia yang sesuai dengan bidang studi Anda, prestasi akademik, atau kriteria tertentu. Carilah beasiswa yang ditawarkan oleh organisasi, universitas, instansi pemerintah, dan yayasan. Perhatikan persyaratan kelayakan, tenggat waktu, dan prosedur aplikasi.
+Rencanakan ke depan: Beri diri Anda cukup waktu untuk mempersiapkan aplikasi Anda. Beasiswa sering memiliki tenggat waktu lebih awal, jadi rencanakan dengan tepat dan buat jadwal agar tetap teratur. Mulailah mengumpulkan dokumen dan informasi yang diperlukan terlebih dahulu untuk menghindari kesibukan di saat-saat terakhir.
+Baca instruksinya: Baca dengan cermat dan pahami instruksi yang diberikan untuk setiap beasiswa. Perhatikan format aplikasi, dokumen yang diperlukan, batas kata, dan pertanyaan atau petunjuk spesifik apa pun.
+Sorot prestasi Anda: Beasiswa sering diberikan berdasarkan prestasi akademik, kegiatan ekstrakurikuler, keterampilan kepemimpinan, keterlibatan masyarakat, atau kriteria lainnya. Persiapkan daftar lengkap prestasi Anda, termasuk penghargaan akademik, pekerjaan sukarela, magang, proyek penelitian, dan pengalaman relevan lainnya yang menunjukkan keahlian dan kemampuan Anda.
+Pernyataan atau esai pribadi: Banyak beasiswa memerlukan pernyataan atau esai pribadi sebagai bagian dari aplikasi. Ini adalah kesempatan bagi Anda untuk mengekspresikan motivasi, tujuan, dan aspirasi Anda. Bersikaplah otentik, ungkapkan kekuatan Anda, dan jelaskan mengapa Anda adalah kandidat yang layak untuk mendapatkan beasiswa. Sesuaikan esai Anda dengan beasiswa spesifik yang Anda lamar."
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
