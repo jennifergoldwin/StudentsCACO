@@ -30,12 +30,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_item_org_title"
                 android:fontFamily="@font/source_sans_pro_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="International Student Mobility Awards edisi Vokasi (IISMAVO) 2023"/>
 
             <TextView
+                android:id="@+id/tv_item_org_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="deadline 09 Maret 2023"/>
