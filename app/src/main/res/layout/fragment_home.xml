@@ -7,10 +7,12 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="24dp">
+        android:layout_height="match_parent">
         <RelativeLayout
             android:id="@+id/rl_home_top"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -22,7 +24,7 @@
                 android:layout_toLeftOf="@id/ll_setting_bookmark"
                 android:fontFamily="@font/source_sans_pro_bold"
                 android:text="Hello!"
-                android:textColor="@color/primary_light"
+                android:textColor="?android:attr/colorPrimary"
                 android:textSize="24dp" />
             <LinearLayout
                 android:id="@+id/ll_setting_bookmark"
@@ -34,19 +36,16 @@
                 >
                 <ImageView
                     android:id="@+id/iv_settings"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginRight="10dp"
                     android:src="@drawable/settings"/>
                 <ImageView
                     android:id="@+id/iv_bookmark"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/bookmark"/>
-
             </LinearLayout>
 
         </RelativeLayout>
@@ -68,28 +67,33 @@
                         android:id="@+id/rl_fragment_home_scholarship"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="25dp">
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp">
                         <TextView
                             android:id="@+id/tv_fragment_home_text_scholarship"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Scholarship"
-                            android:textSize="16dp"
+                            android:textSize="17sp"
                             android:layout_alignParentStart="true"
-                            android:fontFamily="@font/source_sans_pro_semibold"/>
+                            android:fontFamily="@font/source_sans_pro_bold"/>
                         <TextView
                             android:id="@+id/tv_see_all_scholarship"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="See all"
-                            android:textColor="@color/primary_light"
+                            android:textSize="15sp"
+                            android:textColor="?android:attr/colorPrimary"
                             android:layout_alignParentEnd="true"
                             android:fontFamily="@font/source_sans_pro_semibold"/>
                     </RelativeLayout>
                     <include
                         android:id="@+id/item_layout_scholarship"
                         layout="@layout/item_organization_layout"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
@@ -103,28 +107,33 @@
                         android:id="@+id/rl_fragment_home_tips"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="25dp">
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp">
                         <TextView
                             android:id="@+id/tv_fragment_home_text_tips"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tips and Tricks"
-                            android:textSize="16dp"
+                            android:textSize="17sp"
                             android:layout_alignParentStart="true"
-                            android:fontFamily="@font/source_sans_pro_semibold"/>
+                            android:fontFamily="@font/source_sans_pro_bold"/>
                         <TextView
                             android:id="@+id/tv_see_all_tips"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="See all"
-                            android:textColor="@color/primary_light"
+                            android:textSize="15sp"
+                            android:textColor="?android:attr/colorPrimary"
                             android:layout_alignParentEnd="true"
                             android:fontFamily="@font/source_sans_pro_semibold"/>
                     </RelativeLayout>
                     <include
                         android:id="@+id/item_layout_tips"
                         layout="@layout/item_tips_trick"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
@@ -133,27 +142,30 @@
                     android:layout_below="@id/ll_fragment_home_tips"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
                     android:orientation="vertical">
                     <RelativeLayout
                         android:id="@+id/rl_fragment_home_recommendation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginTop="25dp">
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp">
                         <TextView
                             android:id="@+id/tv_fragment_text_recommendation"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Recommendation"
-                            android:textSize="16dp"
+                            android:textSize="17sp"
                             android:layout_alignParentStart="true"
-                            android:fontFamily="@font/source_sans_pro_semibold"/>
+                            android:fontFamily="@font/source_sans_pro_bold"/>
                         <TextView
                             android:id="@+id/tv_see_all_recommendation"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="See all"
+                            android:textSize="15sp"
                             android:textColor="@color/primary_light"
                             android:layout_alignParentEnd="true"
                             android:fontFamily="@font/source_sans_pro_semibold"/>
@@ -161,6 +173,8 @@
                     <include
                         android:id="@+id/item_layout_recommendation"
                         layout="@layout/item_organization_layout"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>

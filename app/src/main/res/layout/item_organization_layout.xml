@@ -9,8 +9,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#EBEEF2"
-        android:padding="10dp">
+        android:background="?android:attr/colorBackgroundFloating"
+        android:padding="20dp">
         <ImageView
             android:id="@+id/iv_item_org_img"
             android:layout_width="wrap_content"
@@ -40,24 +40,29 @@
                 android:id="@+id/tv_item_org_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro"
                 android:text="deadline 09 Maret 2023"/>
         </LinearLayout>
 
         <ImageView
             android:id="@+id/ib_bookmark"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/bookmark"
             android:layout_alignParentEnd="true" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="8dp"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:fontFamily="@font/source_sans_pro_semibold"
             android:textColor="@android:color/white"
             android:background="@drawable/back_button_default"
             android:layout_alignParentEnd="true"
-            android:layout_height="wrap_content"
             android:layout_below="@id/ll_item_detail"
             android:text="Add"/>
     </RelativeLayout>
