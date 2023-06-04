@@ -14,22 +14,21 @@
             android:id="@+id/rl_fragment_apply_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            android:layout_marginBottom="10dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:fontFamily="@font/source_sans_pro_bold"
                 android:text="Apply"
-                android:textColor="@color/primary_light"
+                android:textColor="?android:attr/colorPrimary"
                 android:textSize="24dp" />
             <ImageView
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
                 android:src="@drawable/bookmark"/>
         </RelativeLayout>
         <androidx.recyclerview.widget.RecyclerView

@@ -10,4 +10,8 @@
         <item name="colorSwitchThumbNormal">@color/white</item>
         <item name="android:colorForeground">?android:attr/textColor</item>
     </style>
+    <style name="TextMenuNavStyle">
+        <item name="fontFamily">@font/source_sans_pro_semibold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>

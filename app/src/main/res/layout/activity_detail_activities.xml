@@ -16,7 +16,7 @@
         android:id="@+id/rl_activity_detail_act_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#EBEEF2"
+        android:background="?android:attr/colorBackgroundFloating"
         android:padding="15dp">
 
         <ImageView
@@ -46,6 +46,7 @@
             <TextView
                 android:id="@+id/tv_activity_detail_act_deadlineText"
                 android:layout_width="match_parent"
+                android:fontFamily="@font/source_sans_pro"
                 android:layout_height="wrap_content"
                 android:text="deadline 09 Maret 2023"/>
         </LinearLayout>
@@ -53,18 +54,27 @@
     </RelativeLayout>
     <TextView
         android:id="@+id/tv_activity_detail_act_descText"
-        android:padding="15dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="15sp"
         android:layout_below="@id/rl_activity_detail_act_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
         android:text="Pertukaran akademik yang terbuka dan dinamis memainkan peran penting dalam mempersiapkan siswa Indonesia dengan pola pikir, pengetahuan, dan keterampilan yang siap menghadapi masa depan yang mereka butuhkan untuk berhasil. Mobilitas internasional yang dipromosikan oleh IISMA, salah satu program unggulan Kampus Emansipasi, akan mengembangkan apresiasi dan pemahaman lintas budaya mahasiswa, mempersiapkan generasi baru warga global yang siap berkontribusi pada masyarakat dan dunia. Masa depan yang lebih baik dimulai hari ini dengan program Emansipasi Kampus."/>
 
     <Button
-        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/back_button_primary"
-        android:text="Add"/>
+        android:text="Add" />
 </RelativeLayout>
