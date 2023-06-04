@@ -80,9 +80,11 @@ public class DetailSearchActivity extends AppCompatActivity {
                              Log.v("RESPONSE",array.toString());
                              for (int i = 0 ; i < array.length() ; i++){
                                  JSONObject object = array.getJSONObject(i);
-                                 Activities a = new Activities(object.getString("_id"),object.getString("date"),object.getString("desc"),object.getString("url"),object.getString("title"),object.getString("type"));
+                                 Activities a = new Activities(object.getString("_id"),object.getString("date"),
+                                         object.getString("desc"),
+                                         object.getString("url"),object.getString("title"),object.getString("type"),object.getBoolean("bookmark"),object.getBoolean("apply"));
                                  activities.add(a);
-                                 adapter = new ListActivitiesAdapter(this,activities);
+                                 adapter = new ListActivitiesAdapter(this,activities,"Add");
                                  binding.rvActivityDetailSearchList.setAdapter(adapter);
                              }
 

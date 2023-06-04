@@ -24,6 +24,7 @@
                 android:textColor="?android:attr/colorPrimary"
                 android:textSize="24dp" />
             <ImageView
+                android:id="@+id/ib_bookmark"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
                 android:layout_width="22dp"

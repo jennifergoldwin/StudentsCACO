@@ -8,32 +8,19 @@ public class Activities {
     private String title;
     private String type;
 
-    public Activities(){
+    private Boolean bookmark;
 
-    }
-    public Activities(String _id,  String date, String desc,  String url, String title,String type) {
+    private Boolean apply;
+
+    public Activities(String _id, String date, String desc, String url, String title, String type, Boolean bookmark, Boolean apply) {
         this._id = _id;
-        this.type = type;
         this.date = date;
         this.desc = desc;
         this.url = url;
         this.title = title;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
         this.type = type;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+        this.bookmark = bookmark;
+        this.apply = apply;
     }
 
     public String get_id() {
@@ -43,8 +30,6 @@ public class Activities {
     public void set_id(String _id) {
         this._id = _id;
     }
-
-
 
     public String getDate() {
         return date;
@@ -68,5 +53,37 @@ public class Activities {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Boolean getBookmark() {
+        return bookmark;
+    }
+
+    public void setBookmark(Boolean bookmark) {
+        this.bookmark = bookmark;
+    }
+
+    public Boolean getApply() {
+        return apply;
+    }
+
+    public void setApply(Boolean apply) {
+        this.apply = apply;
     }
 }
