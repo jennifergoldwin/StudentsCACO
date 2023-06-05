@@ -29,8 +29,7 @@ public class DetailActivitiesActivity extends AppCompatActivity {
         binding.tvActivityDetailActTitleText.setText(intent.getStringExtra("title"));
         binding.tvActivityDetailActDescText.setText(intent.getStringExtra("desc"));
         binding.tvActivityDetailActDeadlineText.setText("Deadline: "+intent.getStringExtra("date"));
-        Picasso.get().load(intent.getStringExtra("url")).resize(50, 50)
-                .centerCrop().into(binding.ivActivityDetailActImg);
+        Picasso.get().load(intent.getStringExtra("url")).into(binding.ivActivityDetailActImg);
 
     }
 
