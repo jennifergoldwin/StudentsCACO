@@ -73,8 +73,7 @@ public class ListActivitiesAdapter extends RecyclerView.Adapter<ListActivitiesAd
         holder.btn.setText(titleButton);
         holder.title.setText(activities.get(position).getTitle());
         holder.date.setText("Deadline "+activities.get(position).getDate());
-        Picasso.get().load(activities.get(position).getUrl()).resize(100, 100)
-                .centerCrop().into(holder.imageView);
+        Picasso.get().load(activities.get(position).getUrl()).into(holder.imageView);
         holder.itemView.setOnClickListener(view -> {
             Intent intent = new Intent(holder.itemView.getContext(), DetailActivitiesActivity.class);
             intent.putExtra("title",activities.get(position).getTitle());

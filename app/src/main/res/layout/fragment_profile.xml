@@ -74,6 +74,7 @@
                         app:hintEnabled="false">
 
                         <EditText
+                            android:id="@+id/etFullName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
@@ -114,6 +115,7 @@
                         app:hintEnabled="false">
 
                         <EditText
+                            android:id="@+id/etEmail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
@@ -154,6 +156,7 @@
                         app:hintEnabled="false">
 
                         <EditText
+                            android:id="@+id/etUsername"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
@@ -194,6 +197,7 @@
                         app:hintEnabled="false">
 
                         <EditText
+                            android:id="@+id/etNIM"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
@@ -234,6 +238,7 @@
                         app:hintEnabled="false">
 
                         <EditText
+                            android:id="@+id/etJurusan"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
@@ -260,6 +265,7 @@
             android:layout_alignParentBottom="true">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
                 android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -274,6 +280,7 @@
                 android:textSize="15sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
                 android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -288,6 +295,7 @@
                 android:textSize="15sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_edit_profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="visible"
